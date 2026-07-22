@@ -1,28 +1,28 @@
 class Amsftp < Formula
   desc "Vim-first two-pane SFTP file manager"
   homepage "https://github.com/TyrantLucifer/awesome-sftp-cli"
-  version "0.1.7"
+  version "0.1.8"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/TyrantLucifer/awesome-sftp-cli/releases/download/v0.1.7/amsftp_0.1.7_darwin_arm64.tar.gz"
-      sha256 "e7c303d6aafd6f6ad628c70945aa5f393f1b46ac5df2b5e06c3d31bdc390b263"
+      url "https://github.com/TyrantLucifer/awesome-sftp-cli/releases/download/v0.1.8/amsftp_0.1.8_darwin_arm64.tar.gz"
+      sha256 "038942c55d65735d7636a38f35c94b1cd5285a66fd6a89d21055cfce84785255"
     end
     on_intel do
-      url "https://github.com/TyrantLucifer/awesome-sftp-cli/releases/download/v0.1.7/amsftp_0.1.7_darwin_amd64.tar.gz"
-      sha256 "9fb26f8a81d3529e344b2ae50310e4f1ba104d41eb614ef9db92608995044c8d"
+      url "https://github.com/TyrantLucifer/awesome-sftp-cli/releases/download/v0.1.8/amsftp_0.1.8_darwin_amd64.tar.gz"
+      sha256 "f1ac8e8699287519b0a0dec036cfb47841f5b2b9afdb43a10a979b1f20f2e4e4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/TyrantLucifer/awesome-sftp-cli/releases/download/v0.1.7/amsftp_0.1.7_linux_arm64.tar.gz"
-      sha256 "b1f3152deb88be2dcc79af889b43ae88ae4904f682f8a8672946ec21021928cb"
+      url "https://github.com/TyrantLucifer/awesome-sftp-cli/releases/download/v0.1.8/amsftp_0.1.8_linux_arm64.tar.gz"
+      sha256 "f1e7b44887252cbfb9e2da1e78949d82298f9b138a05c2c9b94d2880e72eb690"
     end
     on_intel do
-      url "https://github.com/TyrantLucifer/awesome-sftp-cli/releases/download/v0.1.7/amsftp_0.1.7_linux_amd64.tar.gz"
-      sha256 "bc3f75c35380d0019e324afb386a3ffd16b781a4c268258a5d774b2c4cca0d90"
+      url "https://github.com/TyrantLucifer/awesome-sftp-cli/releases/download/v0.1.8/amsftp_0.1.8_linux_amd64.tar.gz"
+      sha256 "9a1f366e669e920bf0f2ab355aefc3394f137649933cf162093bcd6a9fd66b07"
     end
   end
 
@@ -33,6 +33,6 @@ class Amsftp < Formula
   end
 
   test do
-    assert_match "0.1.7", shell_output("#{bin}/amsftp --version")
+    assert_match "0.1.8", shell_output("#{bin}/amsftp --version")
   end
 end
